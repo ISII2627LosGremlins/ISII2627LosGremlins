@@ -21,4 +21,6 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     //¿Añadir propiedad para la clase Reposicion?
     public DbSet<Reposicion> Reposiciones { get; set; }
 
+    public DbSet<Resena> Resenas { get; set; }
+
 }
