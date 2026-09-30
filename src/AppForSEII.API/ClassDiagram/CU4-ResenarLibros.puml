@@ -1,0 +1,5 @@
+@startuml
+hide methods
+!include Resena.puml
+!include ResenaItem.puml
+@enduml
