@@ -8,12 +8,13 @@ public class Libro
     }
 
     //Constructor de la clase con sus atributos
-    public Libro(int id,string titulo,string tipoLibro,string autor,DateTime fechaLanzamiento,decimal precioCompra,decimal precioReposicion,int stock)
+    public Libro(int id,string titulo,string tipoLibro,string autor, decimal calificacionMedia, DateTime fechaLanzamiento,decimal precioCompra,decimal precioReposicion,int stock)
     {
         Id = id;
         Titulo = titulo;
         TipoLibro = tipoLibro;
         Autor = autor;
+        CalificacionMedia = calificacionMedia;
         FechaLanzamiento = fechaLanzamiento;
         PrecioCompra = precioCompra;
         PrecioReposicion = precioReposicion;
@@ -32,6 +33,10 @@ public class Libro
        [StringLength(50, ErrorMessage = "El título no puede superar los 50 caracteres.",MinimumLength = 1)]  //Hacemos que sea obligatorio
        [RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")] //Obligamos que la primera letra del título sea una mayúscula
         public string Autor { get; set; }
+
+        [System.ComponentModel.DataAnnotations.Display(Name = "Calificación media")]
+        [Precision(3, 2)] //La calificación media puede ir de a 0.00 a 5.00, por lo que establecemos la precisión y escala de la propiedad CalificacionMedia
+        public decimal CalificacionMedia { get; set; }
 
         [DataType(System.ComponentModel.DataAnnotations.DataType.Date)]
         [System.ComponentModel.DataAnnotations.Display(Name = "Fecha de Lanzamiento")]
