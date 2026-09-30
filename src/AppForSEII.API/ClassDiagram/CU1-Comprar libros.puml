@@ -1,5 +1,7 @@
 @startuml
 hide methods
+!include ApplicationUser.puml
 !include Libro.puml
 !include Compra.puml
+!include Genero.puml
 @enduml
