@@ -30,4 +30,6 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
 
     public DbSet<ResenaItem> ResenaItems { get; set; }
 
+    public DbSet<ReposicionItem> ReposicionItems { get; set; }
+
 }
