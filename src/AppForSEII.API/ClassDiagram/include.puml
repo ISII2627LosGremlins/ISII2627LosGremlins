@@ -1,7 +1,9 @@
 @startuml
 !include .\\ApplicationUser.puml
 !include .\\Compra.puml
+!include .\\Genero.puml
 !include .\\Libro.puml
 !include .\\Reposicion.puml
 !include .\\Resena.puml
+!include .\\ResenaItem.puml
 @enduml
