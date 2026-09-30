@@ -1,0 +1,5 @@
+@startuml
+hide methods
+!include Libro.puml
+!include Compra.puml
+@enduml
