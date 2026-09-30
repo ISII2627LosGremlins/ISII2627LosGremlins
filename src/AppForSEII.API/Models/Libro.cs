@@ -8,13 +8,15 @@ public class Libro
     }
 
     //Constructor de la clase con sus atributos
-    public Libro(int id,string titulo,string autor,DateTime fechaLanzamiento,decimal precioCompra,int stock)
+    public Libro(int id,string titulo,string tipoLibro,string autor,DateTime fechaLanzamiento,decimal precioCompra,decimal precioReposicion,int stock)
     {
         Id = id;
         Titulo = titulo;
+        TipoLibro = tipoLibro;
         Autor = autor;
         FechaLanzamiento = fechaLanzamiento;
         PrecioCompra = precioCompra;
+        PrecioReposicion = precioReposicion;
         Stock = stock;
     }
 
@@ -44,6 +46,15 @@ public class Libro
         [System.ComponentModel.DataAnnotations.Display(Name = " Stock")] 
         [Range(0, int.MaxValue, ErrorMessage = "No puede haber una cantidad negativa de un stock")] //Stock minimo 0 y maximo MaxValue
         public int Stock { get; set; }
+
+        [System.ComponentModel.DataAnnotations.Display(Name = "Tipo de Libro")]
+        [StringLength(50, ErrorMessage = "El título no puede superar los 50 caracteres.",MinimumLength = 1)]
+        public string? TipoLibro { get; set; } //(p. ej., bolsillo, tapa dura)
+
+        [DataType(System.ComponentModel.DataAnnotations.DataType.Currency)]
+        [System.ComponentModel.DataAnnotations.Display(Name = "Precio Reposición")]
+        [Precision(5, 2)] //Establece la precisión y escala de la propiedad PrecioReposicion
+        public decimal PrecioReposicion { get; set; }
 
         //Hay que añadir los comandos para la BD 
 
