@@ -6,10 +6,13 @@ class Libro {
     + Titulo : string <<get>> <<set>>
     + Autor : string <<get>> <<set>>
     + CalificacionMedia : decimal <<get>> <<set>>
+    + FechaLanzamiento : DateTime <<get>> <<set>>
     + PrecioCompra : decimal <<get>> <<set>>
     + Stock : int <<get>> <<set>>
     + TipoLibro : string? <<get>> <<set>>
     + PrecioReposicion : decimal <<get>> <<set>>
+    + Genero : Genero <<get>> <<set>>
+    + Editorial : Editorial <<get>> <<set>>
+    + ResenaItems : IList<ResenaItem> <<get>> <<set>>
 }
-Libro --> "FechaLanzamiento" DateTime
 @enduml

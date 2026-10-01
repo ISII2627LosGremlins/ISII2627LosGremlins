@@ -4,5 +4,6 @@ class Editorial {
     + Editorial(id:int, nombre:string)
     + Id : int <<get>> <<set>>
     + Nombre : string <<get>> <<set>>
+    + Libros : IList<Libro> <<get>> <<set>>
 }
 @enduml
