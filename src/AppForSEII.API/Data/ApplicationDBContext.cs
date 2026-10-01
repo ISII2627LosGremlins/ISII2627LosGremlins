@@ -33,4 +33,6 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     public DbSet<ReposicionItem> ReposicionItems { get; set; }
 
     public DbSet<Editorial> Editoriales { get; set; }
+
+    public DbSet<Genero> Genero { get; set;}
 }
