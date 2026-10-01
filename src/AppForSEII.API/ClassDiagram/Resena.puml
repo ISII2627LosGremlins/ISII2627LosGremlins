@@ -3,9 +3,11 @@ class Resena {
     + Resena()
     + Resena(id:int, fechaResena:DateTime, titulo:string)
     + Id : int <<get>> <<set>>
-    + FechaResena : DateTime <<get>> <<set>>
     + Titulo : string <<get>> <<set>>
-    + Usuario : ApplicationUser <<get>> <<set>>
-    + ResenaItems : IList<ResenaItem> <<get>> <<set>>
 }
+class "IList`1"<T> {
+}
+Resena --> "FechaResena" DateTime
+Resena --> "Usuario" ApplicationUser
+Resena --> "ResenaItems<ResenaItem>" "IList`1"
 @enduml

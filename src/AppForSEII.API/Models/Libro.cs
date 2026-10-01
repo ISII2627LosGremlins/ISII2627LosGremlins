@@ -61,11 +61,12 @@ public class Libro
         [Precision(5, 2)] //Establece la precisión y escala de la propiedad PrecioReposicion
         public decimal PrecioReposicion { get; set; }
 
-        //Relaciones (BDD)
-        public Genero Genero { get; set; }
-        public Editorial Editorial { get; set; }
+        //Relaciones
+        public Genero Genero { get; set;} //Un libro tiene un unico genero 
 
-        public IList<ResenaItem> ResenaItems { get; set; }
+        public Editorial Editorial {get; set;} //Un libro le pertenece a una unica editorial
+
+        public IList<CompraItem> CompraItems {get; set;} //Muchos libro se realizan en una compra
 
         //Métodos que tiene la clase Libro...
 }

@@ -25,4 +25,6 @@ public class ApplicationUser : IdentityUser
 
     //Relaciones (BDD)
     public IList<Resena> Resenas { get; set; }
+
+    public IList<Compra> Compras {get; set;}
 }

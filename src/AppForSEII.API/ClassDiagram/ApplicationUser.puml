@@ -4,7 +4,10 @@ class ApplicationUser {
     + ApplicationUser(id:string, name:string, surname:string, userName:string)
     + Name : string? <<get>> <<set>>
     + Surname : string? <<get>> <<set>>
-    + Resenas : IList<Resena> <<get>> <<set>>
+}
+class "IList`1"<T> {
 }
 IdentityUser <|-- ApplicationUser
+ApplicationUser --> "Resenas<Resena>" "IList`1"
+ApplicationUser --> "Compras<Compra>" "IList`1"
 @enduml
