@@ -61,7 +61,11 @@ public class Libro
         [Precision(5, 2)] //Establece la precisión y escala de la propiedad PrecioReposicion
         public decimal PrecioReposicion { get; set; }
 
-        //Hay que añadir los comandos para la BD 
+        //Relaciones (BDD)
+        public Genero Genero { get; set; }
+        public Editorial Editorial { get; set; }
+
+        public IList<ResenaItem> ResenaItems { get; set; }
 
         //Métodos que tiene la clase Libro...
 }
