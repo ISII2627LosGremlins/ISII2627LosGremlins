@@ -66,5 +66,7 @@ public class Libro
 
         public Editorial Editorial {get; set;} //Un libro le pertenece a una unica editorial
 
+        public IList<CompraItem> CompraItems {get; set;} //Muchos libro se realizan en una compra
+
         //Métodos que tiene la clase Libro...
 }

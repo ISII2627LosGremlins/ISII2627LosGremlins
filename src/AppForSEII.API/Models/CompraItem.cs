@@ -30,6 +30,13 @@ public class CompraItem
     [System.ComponentModel.DataAnnotations.Display(Name = "ID de la Compra")]
      public int CompraId { get; set; } //FK al atributo Id de la clase Compra
 
+
+    //Relaciones
+
+    public Libro Libros {get; set;}
+
+    public Compra Compras {get; set;}
+
 }
 
     

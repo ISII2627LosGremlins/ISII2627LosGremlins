@@ -6,4 +6,6 @@ class CompraItem {
     + LibroId : int <<get>> <<set>>
     + CompraId : int <<get>> <<set>>
 }
+CompraItem --> "Libros" Libro
+CompraItem --> "Compras" Compra
 @enduml

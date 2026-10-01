@@ -11,5 +11,10 @@ class Libro {
     + TipoLibro : string? <<get>> <<set>>
     + PrecioReposicion : decimal <<get>> <<set>>
 }
+class "IList`1"<T> {
+}
 Libro --> "FechaLanzamiento" DateTime
+Libro --> "Genero" Genero
+Libro --> "Editorial" Editorial
+Libro --> "CompraItems<CompraItem>" "IList`1"
 @enduml

@@ -22,4 +22,9 @@ public class ApplicationUser : IdentityUser
 
     [StringLength(50)]
     public string? Surname {get;set;}
+
+    //Relaciones (BDD)
+    public IList<Resena> Resenas { get; set; }
+
+    public IList<Compra> Compras {get; set;}
 }

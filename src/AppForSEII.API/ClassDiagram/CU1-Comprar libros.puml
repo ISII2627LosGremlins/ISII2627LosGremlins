@@ -6,5 +6,5 @@ hide methods
 !include Genero.puml
 !include CompraItem.puml
 !include Editorial.puml
-
+!include MetodoPago.puml
 @enduml

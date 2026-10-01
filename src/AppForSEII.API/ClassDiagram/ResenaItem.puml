@@ -7,4 +7,6 @@ class ResenaItem {
     + LibroId : int <<get>> <<set>>
     + ResenaId : int <<get>> <<set>>
 }
+ResenaItem --> "Libro" Libro
+ResenaItem --> "Resena" Resena
 @enduml

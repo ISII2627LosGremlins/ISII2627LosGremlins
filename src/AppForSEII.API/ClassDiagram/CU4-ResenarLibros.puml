@@ -2,4 +2,8 @@
 hide methods
 !include Resena.puml
 !include ResenaItem.puml
+!include Libro.puml
+!include Genero.puml
+!include Editorial.puml
+!include ApplicationUser.puml
 @enduml

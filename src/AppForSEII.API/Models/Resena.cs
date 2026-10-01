@@ -29,5 +29,10 @@ namespace AppForSEII.API.Models
         [Required(ErrorMessage = "El título es obligatorio.")]
         [StringLength(20, MinimumLength = 10, ErrorMessage = "El título debe tener entre 10 y 20 caracteres.")]
         public string Titulo { get; set; }
+
+
+        //Relaciones (BDD)
+        public ApplicationUser Usuario { get; set; }
+        public IList<ResenaItem> ResenaItems { get; set; }
     }
 }

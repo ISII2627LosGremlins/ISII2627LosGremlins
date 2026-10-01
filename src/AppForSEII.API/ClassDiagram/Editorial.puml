@@ -5,4 +5,7 @@ class Editorial {
     + Id : int <<get>> <<set>>
     + Nombre : string <<get>> <<set>>
 }
+class "IList`1"<T> {
+}
+Editorial --> "Libros<Libro>" "IList`1"
 @enduml
