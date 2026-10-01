@@ -27,7 +27,9 @@ public class Genero
     [StringLength(50, ErrorMessage = "El genero no puede superar los 50 caracteres.",MinimumLength = 1)] //Hacemos que sea obligatorio
     public string Nombre {get; set;}
 
-    //Añadir relaciones
+    //Relaciones (BDD)
+    public IList<Libro> Libros { get; set; }
+    
     //Metodos de la clase genero
 
 }

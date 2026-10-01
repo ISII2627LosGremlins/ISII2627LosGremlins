@@ -29,5 +29,9 @@ namespace AppForSEII.API.Models
         public int LibroId { get; set; }
 
         public int ResenaId { get; set; }
+
+        //Relaciones (BDD)
+        public Libro Libro { get; set; } //Propiedad de navegación para la relación con la entidad Libro
+        public Resena Resena { get; set; } //Propiedad de navegación para la relación con la entidad Resena
     }
 }

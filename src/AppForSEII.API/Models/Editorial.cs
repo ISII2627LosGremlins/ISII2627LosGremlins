@@ -19,5 +19,9 @@ namespace AppForSEII.API.Models
 
         [Required(ErrorMessage = "El nombre es obligatorio.")]
         public string Nombre { get; set; }
-    }
+
+        
+        //Relaciones (BDD)
+        public IList<Libro> Libros { get; set; }
+    }   
 }
