@@ -27,4 +27,7 @@ public class ApplicationUser : IdentityUser
     public IList<Resena> Resenas { get; set; }
 
     public IList<Compra> Compras {get; set;}
+    
+    public IList<Reposicion> Reposiciones { get; set; }
+
 }

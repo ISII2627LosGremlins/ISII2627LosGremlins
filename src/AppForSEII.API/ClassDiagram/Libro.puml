@@ -17,4 +17,5 @@ Libro --> "FechaLanzamiento" DateTime
 Libro --> "Genero" Genero
 Libro --> "Editorial" Editorial
 Libro --> "CompraItems<CompraItem>" "IList`1"
+Libro --> "ReposicionItems<ReposicionItem>" "IList`1"
 @enduml

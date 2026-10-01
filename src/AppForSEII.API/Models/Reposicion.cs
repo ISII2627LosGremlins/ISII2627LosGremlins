@@ -33,6 +33,13 @@ namespace AppForSEII.API.Models
         [StringLength(100, MinimumLength = 20, ErrorMessage = "El comentario debe tener entre 20 y 100 caracteres.")] 
         public string? Comentario { get; set; } //Con '?' hacemos que la propiedad sea opcional, es decir, que pueda ser nula.
 
-        //Comentario prueba
+        //Relaciones
+        public IList<ReposicionItem> ReposicionItems { get; set; } //Relación uno a muchos con la clase ReposicionItem
+
+        public ApplicationUser Usuario { get; set; } //Relación muchos a uno con la clase ApplicationUser
+
+        public IList<MetodoPago> MetodoPagos { get; set; } //Relación muchos a uno con la clase MetodoPago
+
+
     }
 }

@@ -6,5 +6,10 @@ class Reposicion {
     + PrecioTotal : decimal <<get>> <<set>>
     + Comentario : string? <<get>> <<set>>
 }
+class "IList`1"<T> {
+}
 Reposicion --> "FechaReposicion" DateTime
+Reposicion --> "ReposicionItems<ReposicionItem>" "IList`1"
+Reposicion --> "Usuario" ApplicationUser
+Reposicion --> "MetodoPagos<MetodoPago>" "IList`1"
 @enduml
