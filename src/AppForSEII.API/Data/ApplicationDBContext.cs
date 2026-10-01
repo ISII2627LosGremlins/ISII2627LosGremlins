@@ -37,4 +37,6 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     public DbSet<Genero> Genero { get; set;}
 
     public DbSet<CompraItem> CompraItem { get; set;}
+
+    public DbSet<MetodoPago> MetodoPagos { get; set; }
 }
