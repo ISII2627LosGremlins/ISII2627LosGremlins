@@ -68,5 +68,7 @@ public class Libro
 
         public IList<CompraItem> CompraItems {get; set;} //Muchos libro se realizan en una compra
 
+        public IList<ReposicionItem> ReposicionItems { get; set; } //Muchos libros pueden estar en una reposición (relación uno a muchos con la clase ReposicionItem)
+
         //Métodos que tiene la clase Libro...
 }

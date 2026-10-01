@@ -6,4 +6,6 @@ class ReposicionItem {
     + LibroId : int <<get>> <<set>>
     + ReposicionId : int <<get>> <<set>>
 }
+ReposicionItem --> "Reposicion" Reposicion
+ReposicionItem --> "Libro" Libro
 @enduml

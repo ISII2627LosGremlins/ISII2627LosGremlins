@@ -31,5 +31,11 @@ namespace AppForSEII.API.Models
         [System.ComponentModel.DataAnnotations.Display(Name = "ID de la Reposición")]
         public int ReposicionId { get; set; } //FK al atributo Id de la clase Reposicion
 
+        //Relaciones
+        public Reposicion Reposicion { get; set; } //Relación muchos a uno con la clase Reposicion
+
+        public Libro Libro { get; set; } //Relación muchos a uno con la clase Libro
+
+
     }
 }
