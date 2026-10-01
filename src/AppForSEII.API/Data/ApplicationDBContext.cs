@@ -35,4 +35,6 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     public DbSet<Editorial> Editoriales { get; set; }
 
     public DbSet<Genero> Genero { get; set;}
+
+    public DbSet<CompraItem> CompraItem { get; set;}
 }
