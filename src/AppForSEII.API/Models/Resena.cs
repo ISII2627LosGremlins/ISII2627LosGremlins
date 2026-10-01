@@ -7,7 +7,7 @@ namespace AppForSEII.API.Models
         {
         }
 
-        // Constructor con parámetros
+        //Constructor con parámetros
         public Resena(int id, DateTime fechaResena, string titulo)
         {
             Id = id;
@@ -15,7 +15,7 @@ namespace AppForSEII.API.Models
             Titulo = titulo;
         }
 
-        // Propiedades
+        //Propiedades
         [Key]
         public int Id { get; set; }
     
