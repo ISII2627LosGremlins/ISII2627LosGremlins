@@ -18,7 +18,7 @@ namespace AppForSEII.API.Models
         //Propiedades
         [Required]
         [System.ComponentModel.DataAnnotations.Display(Name = "Número de Tarjeta")]
-        [StringLength(16, MinimumLength = 16, ErrorMessage = "El comentario debe tener entre 20 y 100 caracteres.")]
+        [StringLength(16, MinimumLength = 16, ErrorMessage = "El número de tarjeta debe tener 16 caracteres.")]
         [RegularExpression(@"^\d{16}$", ErrorMessage = "El número de tarjeta solo puede contener números.")]
         public string NumeroTarjeta { get; set; }
 
