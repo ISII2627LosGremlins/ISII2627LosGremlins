@@ -10,7 +10,6 @@ class Libro {
     + Stock : int <<get>> <<set>>
     + TipoLibro : string? <<get>> <<set>>
     + PrecioReposicion : decimal <<get>> <<set>>
-    + FechaLanzamiento : DateTime <<get>> <<set>>
 }
 class "IList`1"<T> {
 }
