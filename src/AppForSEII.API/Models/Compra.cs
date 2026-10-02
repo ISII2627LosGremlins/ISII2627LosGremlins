@@ -10,7 +10,7 @@ public class Compra
     }
 
     //Constructor con atributos
-    public Compra(int id, DateTime fechaCompra, decimal precioTotal, string codigoDescuento)
+    public Compra(int id, DateTime fechaCompra, decimal precioTotal, string? codigoDescuento)
     {
         Id = id;
         FechaCompra = fechaCompra;
@@ -31,13 +31,15 @@ public class Compra
     [Precision(5, 2)] //Establece la precisión y escala de la propiedad PrecioTotal
     public decimal PrecioTotal {get; set;}
 
-    [StringLength(10, MinimumLength = 5, ErrorMessage = "El comentario debe tener entre 5 y 10.")] //El length viene dado en el pdf
+    [StringLength(10, MinimumLength = 5, ErrorMessage = "El comentario debe tener entre 5 y 10 caracteres.")] //El length viene dado en el pdf
     public string? CodigoDescuento {get; set;} //Este atributo es opcional, el cliente puede no usar un codigo de descuento a la hora de comprar
 
     //Relaciones
     public IList<CompraItem> CompraItems { get; set;}
 
     public ApplicationUser Usuario{ get; set;}
+
+    public MetodoPago MetodoPago {get; set;}
 
     
     //Metodos de la clase

@@ -4,5 +4,7 @@ abstract class MetodoPago {
     + MetodoPago(id:int)
     + Id : int <<get>> <<set>>
 }
-MetodoPago --> "Reposicion" Reposicion
+class "IList`1"<T> {
+}
+MetodoPago --> "Reposiciones<Reposicion>" "IList`1"
 @enduml
