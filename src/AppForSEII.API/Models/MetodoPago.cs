@@ -19,7 +19,7 @@ namespace AppForSEII.API.Models
         public int Id { get; set; }
 
         //Relaciones
-        public Reposicion Reposicion { get; set; } //Relación muchos a uno con la clase Reposicion
+        public IList<Reposicion> Reposiciones { get; set; } //Relación uno a muchos con la clase Reposicion
 
     }
 }
