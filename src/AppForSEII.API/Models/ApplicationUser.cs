@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Identity;
 
 namespace AppForSEII.API.Models;
 
-public class ApplicationUser 
+public class ApplicationUser : IdentityUser
 {
     public ApplicationUser()
     {
     }
-    public ApplicationUser(int id, string name, string surname, string direccion, string telefono)
+    public ApplicationUser(string id, string name, string surname, string direccion, string telefono)
     {
        Id = id;
        Name = name;
@@ -19,7 +19,7 @@ public class ApplicationUser
 
     //Propiedades
     [Key]
-    public int Id { get; set; }
+    public string Id { get; set; }
 
     [Required]
     [System.ComponentModel.DataAnnotations.Display(Name = "Nombre")]
