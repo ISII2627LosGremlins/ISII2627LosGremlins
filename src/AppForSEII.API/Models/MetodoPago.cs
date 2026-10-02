@@ -21,5 +21,7 @@ namespace AppForSEII.API.Models
         //Relaciones
         public IList<Reposicion> Reposiciones { get; set; } //Relación uno a muchos con la clase Reposicion
 
+        public IList<Compra> Compras { get; set;} //Relación uno a muchos con la clase Compra
+
     }
 }
