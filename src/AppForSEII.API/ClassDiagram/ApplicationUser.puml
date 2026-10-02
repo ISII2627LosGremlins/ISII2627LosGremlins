@@ -1,8 +1,8 @@
 @startuml
 class ApplicationUser {
     + ApplicationUser()
-    + ApplicationUser(id:int, name:string, surname:string, direccion:string, telefono:string)
-    + Id : int <<get>> <<set>>
+    + ApplicationUser(id:string, name:string, surname:string, direccion:string, telefono:string)
+    + Id : string <<get>> <<set>>
     + Name : string <<get>> <<set>>
     + Surname : string <<get>> <<set>>
     + Direccion : string <<get>> <<set>>
@@ -10,6 +10,7 @@ class ApplicationUser {
 }
 class "IList`1"<T> {
 }
+IdentityUser <|-- ApplicationUser
 ApplicationUser --> "Resenas<Resena>" "IList`1"
 ApplicationUser --> "Compras<Compra>" "IList`1"
 ApplicationUser --> "Reposiciones<Reposicion>" "IList`1"

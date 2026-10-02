@@ -1,5 +1,7 @@
 @startuml
 hide methods
+hide IList`1
+hide DateTime
 !include ApplicationUser.puml
 !include Libro.puml
 !include Compra.puml
