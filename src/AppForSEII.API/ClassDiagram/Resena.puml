@@ -4,6 +4,7 @@ class Resena {
     + Resena(id:int, fechaResena:DateTime, titulo:string)
     + Id : int <<get>> <<set>>
     + Titulo : string <<get>> <<set>>
+    + FechaResena : DateTime <<get>> <<set>>
 }
 class "IList`1"<T> {
 }
