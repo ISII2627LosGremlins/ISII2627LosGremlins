@@ -7,4 +7,7 @@ hide methods
 !include CompraItem.puml
 !include Editorial.puml
 !include MetodoPago.puml
+!include PayPal.puml
+!include Visa.puml 
+!include GooglePay.puml
 @enduml
