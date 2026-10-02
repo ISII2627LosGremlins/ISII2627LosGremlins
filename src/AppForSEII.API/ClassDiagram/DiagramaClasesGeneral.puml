@@ -1,15 +1,21 @@
 @startuml
 hide methods
-hide Editorial
 hide DateTime
 hide IList`1
 !include ApplicationUser.puml
 !include Libro.puml
-!include Reposicion.puml
+!include Editorial.puml
 !include Genero.puml
+!include Reposicion.puml
+!include CompraItem.puml
 !include ReposicionItem.puml
+!include ResenaItem.puml
+!include Compra.puml
+!include Reposicion.puml
+!include Resena.puml
 !include MetodoPago.puml
+!include Visa.puml
 !include GooglePay.puml
 !include PayPal.puml
-!include Visa.puml
+
 @enduml
