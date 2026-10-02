@@ -5,6 +5,7 @@ class Compra {
     + Id : int <<get>> <<set>>
     + PrecioTotal : decimal <<get>> <<set>>
     + CodigoDescuento : string? <<get>> <<set>>
+    + FechaCompra : DateTime <<get>> <<set>>
 }
 class "IList`1"<T> {
 }
