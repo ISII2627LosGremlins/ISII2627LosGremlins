@@ -1,13 +1,15 @@
 @startuml
 class ApplicationUser {
     + ApplicationUser()
-    + ApplicationUser(id:string, name:string, surname:string, userName:string)
-    + Name : string? <<get>> <<set>>
-    + Surname : string? <<get>> <<set>>
+    + ApplicationUser(id:int, name:string, surname:string, direccion:string, telefono:string)
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Surname : string <<get>> <<set>>
+    + Direccion : string <<get>> <<set>>
+    + Telefono : string <<get>> <<set>>
 }
 class "IList`1"<T> {
 }
-IdentityUser <|-- ApplicationUser
 ApplicationUser --> "Resenas<Resena>" "IList`1"
 ApplicationUser --> "Compras<Compra>" "IList`1"
 ApplicationUser --> "Reposiciones<Reposicion>" "IList`1"
