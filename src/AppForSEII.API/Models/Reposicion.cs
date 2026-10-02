@@ -9,7 +9,7 @@ namespace AppForSEII.API.Models
         }
 
         //Contructor con parametros
-        public Reposicion(int id, DateTime fechaReposicion, decimal precioTotal, string comentario)
+        public Reposicion(int id, DateTime fechaReposicion, decimal precioTotal, string? comentario)
         {
             Id = id;
             FechaReposicion = fechaReposicion;
@@ -38,7 +38,7 @@ namespace AppForSEII.API.Models
 
         public ApplicationUser Usuario { get; set; } //Relación muchos a uno con la clase ApplicationUser
 
-        public IList<MetodoPago> MetodoPagos { get; set; } //Relación muchos a uno con la clase MetodoPago
+        public MetodoPago MetodoPago { get; set; } //Relación muchos a uno con la clase MetodoPago
 
 
     }
