@@ -18,8 +18,6 @@ public class ApplicationUser : IdentityUser
     }
 
     //Propiedades
-    [Key]
-    public string Id { get; set; }
 
     [Required]
     [System.ComponentModel.DataAnnotations.Display(Name = "Nombre")]
