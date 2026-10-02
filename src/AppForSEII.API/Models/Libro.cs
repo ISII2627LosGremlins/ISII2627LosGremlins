@@ -70,5 +70,8 @@ public class Libro
 
         public IList<ReposicionItem> ReposicionItems { get; set; } //Muchos libros pueden estar en una reposición (relación uno a muchos con la clase ReposicionItem)
 
+        public IList<ResenaItem> ResenaItems { get; set; } //Muchos libros pueden tener muchas reseñas (relación uno a muchos con la clase ResenaItem)
+
+
         //Métodos que tiene la clase Libro...
 }
